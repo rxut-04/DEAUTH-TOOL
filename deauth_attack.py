@@ -81,7 +81,7 @@ class WiFiDeauth:
             print("[!] Try manually: sudo airmon-ng start <interface>")
             return False
     
-    def deauth_attack(self, target_bssid, client_bssid=None, count=0, interval=0.1):
+    def deauth_attack(self, target_bssid, client_bssid=None, count=0, interval=0.01):
         """
         Perform deauthentication attack
         
@@ -248,7 +248,7 @@ WARNING: Use only on networks you own or have explicit permission to test.
     parser.add_argument('-t', '--target', type=str, help='Target AP MAC address (BSSID)')
     parser.add_argument('-c', '--client', type=str, help='Client MAC address (optional)')
     parser.add_argument('-n', '--count', type=int, default=0, help='Number of packets (0 = infinite)')
-    parser.add_argument('--interval', type=float, default=0.1, help='Interval between packets (seconds)')
+    parser.add_argument('--interval', type=float, default=0.01, help='Interval between packets (seconds, default: 0.01 for aggressive)')
     parser.add_argument('--scan', action='store_true', help='Scan for available networks')
     parser.add_argument('--monitor', action='store_true', help='Set interface to monitor mode')
     

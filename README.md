@@ -9,6 +9,13 @@
 ## Overview
 This tool performs WiFi deauthentication attacks using a WiFi adapter in monitor mode. Optimized for **Kali Linux** with pre-installed tools like aircrack-ng and scapy.
 
+### ⚡ POWERFUL VERSION AVAILABLE!
+If the regular attack isn't working, use **`power_deauth.py`** - a much more aggressive version with:
+- Multiple parallel threads
+- Ultra-fast packet sending (1000+ packets/second)
+- INSTANT KILL mode for immediate effect
+- See `POWER_ATTACK_GUIDE.md` for details
+
 ## Prerequisites
 
 ### Hardware
